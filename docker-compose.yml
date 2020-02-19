@@ -1,0 +1,12 @@
+version: "3.7"
+services:
+    jupyter:
+        build: .
+        image: jupyter
+        ports:
+            - 8888:8888
+        environment:
+            - INSTALL_REQUIREMENTS=${INSTALL_REQUIREMENTS:-0}
+        volumes:
+            - ./:/src
+        command: lab
