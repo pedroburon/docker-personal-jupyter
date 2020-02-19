@@ -22,7 +22,7 @@ Or
 
 When using docker-compose you can modify environment variables using a `.env` file at the root of the project.
 
-* `INSTALL_REQUIREMENTS=0`
+* `INSTALL_REQUIREMENTS=0`: when exists and is different than 0 will install missing requirements from requirements.txt just before start.
 
 ## New requirements
 
